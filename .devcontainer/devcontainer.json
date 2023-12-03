@@ -5,7 +5,7 @@
         "--gpus", "all",
         "--shm-size","16gb"
     ],
-    "postCreateCommand": "pip install -r requirements.txt || true; git config --global --add safe.directory /workspace; pre-commit install",
+    "postCreateCommand": "set +e; pip install -r requirements.txt; set -e; git config --global --add safe.directory /workspace; pre-commit install;tmux new-session -d -s jupyter_session -n jupyter_window; tmux send-keys -t jupyter_session:jupyter_window  'jupyter notebook --no-browser --port=8080 --allow-root --NotebookApp.token='' --NotebookApp.password='' -y ' Enter ",
     "workspaceFolder": "/workspace",
     "mounts": [
         "type=bind,source=${localWorkspaceFolder},target=/workspace"
