@@ -1,0 +1,37 @@
+{
+    "name": "advenced-deep-learning-with-pytorch",
+    "image": "gcr.io/kaggle-gpu-images/python:latest",
+    "runArgs": [
+        "--gpus", "all",
+        "--shm-size","16gb"
+    ],
+    "postCreateCommand": "pip install -r requirements.txt || true; git config --global --add safe.directory /workspace; pre-commit install",
+    "workspaceFolder": "/workspace",
+    "mounts": [
+        "type=bind,source=${localWorkspaceFolder},target=/workspace"
+    ],
+    "customizations": {
+        "vscode": {
+            "settings": {
+				"python.defaultInterpreterPath": "/opt/conda/bin/python",
+                "cSpell.words": [
+                    "Addmm",
+                    "ILSVRC",
+                    "Relu",
+                    "torchvision",
+                    "torchviz"
+                ]
+			},
+            "extensions": [
+				"ms-python.python",
+				"ms-toolsai.jupyter",
+				"yzhang.markdown-all-in-one",
+				"eamodio.gitlens",
+				"GitHub.copilot",
+				"GitHub.copilot-chat",
+				"bierner.markdown-preview-github-styles",
+				"ms-azuretools.vscode-docker"
+			]
+        }
+    }
+}
