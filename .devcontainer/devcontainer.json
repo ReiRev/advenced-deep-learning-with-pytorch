@@ -5,7 +5,7 @@
         "--gpus", "all",
         "--shm-size","16gb"
     ],
-    "postCreateCommand": "set +e; pip install -r requirements.txt; set -e; pre-commit install;tmux new-session -d -s jupyter_session -n jupyter_window; tmux send-keys -t jupyter_session:jupyter_window  'jupyter notebook --no-browser --port=8080 --allow-root --NotebookApp.token='' --NotebookApp.password='' -y ' Enter ",
+    "postCreateCommand": "/bin/sh .devcontainer/postCreateCommand.sh",
     "workspaceFolder": "/workspace",
     "mounts": [
         "type=bind,source=${localWorkspaceFolder},target=/workspace"
