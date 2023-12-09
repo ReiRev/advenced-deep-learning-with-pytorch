@@ -3,7 +3,8 @@
     "image": "gcr.io/kaggle-gpu-images/python:latest",
     "runArgs": [
         "--gpus", "all",
-        "--shm-size","16gb"
+        "--shm-size","16gb",
+        "--name", "advenced-deep-learning-with-pytorch"
     ],
     "postCreateCommand": "/bin/sh .devcontainer/postCreateCommand.sh",
     "workspaceFolder": "/workspace",
