@@ -7,6 +7,7 @@
         "--name", "advenced-deep-learning-with-pytorch"
     ],
     "postCreateCommand": "/bin/sh .devcontainer/postCreateCommand.sh",
+    "postStartCommand": "/bin/sh .devcontainer/postStartCommand.sh",
     "workspaceFolder": "/workspace",
     "mounts": [
         "type=bind,source=${localWorkspaceFolder},target=/workspace"
