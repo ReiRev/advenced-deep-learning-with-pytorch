@@ -1,13 +1,32 @@
 #!/bin/bash
 
-echo "Installing Python dependencies..."
-pip install --use-deprecated=legacy-resolver -r requirements.txt || true
+export DEBIAN_FRONTEND=noninteractive
 
-echo "Reinstalling PyTorch..."
-pip3 install numpy --pre torch torchvision torchaudio --force-reinstall --index-url https://download.pytorch.org/whl/nightly/cu118 || true
+echo "Installing dependencies..."
+apt update && \
+    apt install -y \
+    wget \
+    build-essential \
+    git \
+    git-lfs \
+    curl \
+    tmux \
+    ca-certificates \
+    python-is-python3 \
+    python3-pip
 
 echo "Configuring Git..."
 git config --global --add safe.directory /workspace
 
-echo "Installing pre-commit hooks..."
+echo "Upgrading pip..."
+pip install --upgrade pip
+
+echo "Installing pre-commit..."
+pip install pre-commit
 pre-commit install
+
+echo "Installing PyTorch..."
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+echo "Installing requirements..."
+pip3 install -r requirements.txt

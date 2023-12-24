@@ -1,6 +1,6 @@
 {
     "name": "advenced-deep-learning-with-pytorch",
-    "image": "gcr.io/kaggle-gpu-images/python:latest",
+    "image": "nvidia/cuda:12.1.0-cudnn8-runtime-ubuntu22.04",
     "runArgs": [
         "--gpus", "all",
         "--shm-size","16gb",
@@ -25,15 +25,17 @@
                 ]
 			},
             "extensions": [
-				"ms-python.python",
-				"ms-toolsai.jupyter",
-				"yzhang.markdown-all-in-one",
-				"eamodio.gitlens",
-				"GitHub.copilot",
-				"GitHub.copilot-chat",
-				"bierner.markdown-preview-github-styles",
-				"ms-azuretools.vscode-docker"
-			]
+                "ms-python.python",
+                "ms-toolsai.jupyter",
+                "yzhang.markdown-all-in-one",
+                "eamodio.gitlens",
+                "GitHub.copilot",
+                "GitHub.copilot-chat",
+                "bierner.markdown-preview-github-styles",
+                "ms-azuretools.vscode-docker",
+                "tamasfe.even-better-toml",
+                "bierner.markdown-mermaid"
+            ]
         }
     }
 }
