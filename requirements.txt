@@ -1,2 +1,5 @@
-pre-commit
 torchviz
+ipykernel
+notebook
+matplotlib
+Pillow
