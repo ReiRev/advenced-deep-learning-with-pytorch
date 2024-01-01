@@ -16,7 +16,7 @@ apt update && \
     python3-pip
 
 echo "Configuring Git..."
-git config --global --add safe.directory /workspace
+git config --global --add safe.directory /workspaces/advenced-deep-learning-with-pytorch
 
 echo "Upgrading pip..."
 pip install --upgrade pip
