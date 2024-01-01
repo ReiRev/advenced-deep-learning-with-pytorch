@@ -6,3 +6,4 @@ Pillow
 lightning
 ipywidgets
 widgetsnbextension
+scikit-learn
