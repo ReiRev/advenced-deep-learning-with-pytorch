@@ -8,14 +8,13 @@
     ],
     "postCreateCommand": "/bin/sh .devcontainer/postCreateCommand.sh",
     "postStartCommand": "/bin/sh .devcontainer/postStartCommand.sh",
-    "workspaceFolder": "/workspace",
+"workspaceFolder": "/workspace",
     "mounts": [
         "type=bind,source=${localWorkspaceFolder},target=/workspace"
     ],
     "customizations": {
         "vscode": {
             "settings": {
-				"python.defaultInterpreterPath": "/opt/conda/bin/python",
                 "cSpell.words": [
                     "Addmm",
                     "ILSVRC",
@@ -29,8 +28,6 @@
                 "ms-toolsai.jupyter",
                 "yzhang.markdown-all-in-one",
                 "eamodio.gitlens",
-                "GitHub.copilot",
-                "GitHub.copilot-chat",
                 "bierner.markdown-preview-github-styles",
                 "ms-azuretools.vscode-docker",
                 "tamasfe.even-better-toml",
