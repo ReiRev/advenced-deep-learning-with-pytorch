@@ -161,3 +161,4 @@ cython_debug/
 1-image-classification/data/hymenoptera_data
 2-ssd/data
 data
+weights
