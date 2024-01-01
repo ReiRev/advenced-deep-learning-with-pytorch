@@ -3,3 +3,6 @@ ipykernel
 notebook
 matplotlib
 Pillow
+lightning
+ipywidgets
+widgetsnbextension
