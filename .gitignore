@@ -162,3 +162,4 @@ cython_debug/
 2-ssd/data
 data
 weights
+results
