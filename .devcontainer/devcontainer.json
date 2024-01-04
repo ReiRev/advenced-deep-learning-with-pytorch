@@ -8,10 +8,6 @@
     ],
     "postCreateCommand": "/bin/sh .devcontainer/postCreateCommand.sh",
     "postStartCommand": "/bin/sh .devcontainer/postStartCommand.sh",
-"workspaceFolder": "/workspace",
-    "mounts": [
-        "type=bind,source=${localWorkspaceFolder},target=/workspace"
-    ],
     "customizations": {
         "vscode": {
             "settings": {
@@ -21,7 +17,8 @@
                     "Relu",
                     "torchvision",
                     "torchviz"
-                ]
+                ],
+                "python.defaultInterpreterPath": "/usr/bin/python3"
 			},
             "extensions": [
                 "ms-python.python",
