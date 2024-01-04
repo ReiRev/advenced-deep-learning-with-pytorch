@@ -26,7 +26,7 @@ pip install pre-commit
 pre-commit install
 
 echo "Installing PyTorch..."
-pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 
 echo "Installing requirements..."
 pip3 install -r requirements.txt

@@ -1,6 +1,6 @@
 {
     "name": "advenced-deep-learning-with-pytorch",
-    "image": "nvidia/cuda:12.1.0-cudnn8-runtime-ubuntu22.04",
+    "image": "nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04",
     "runArgs": [
         "--gpus", "all",
         "--shm-size","16gb",
