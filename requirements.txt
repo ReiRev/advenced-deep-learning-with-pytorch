@@ -9,3 +9,4 @@ widgetsnbextension
 scikit-learn
 pandas
 lightning-flash
+ipynb
