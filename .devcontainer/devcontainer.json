@@ -28,7 +28,8 @@
                 "bierner.markdown-preview-github-styles",
                 "ms-azuretools.vscode-docker",
                 "tamasfe.even-better-toml",
-                "bierner.markdown-mermaid"
+                "bierner.markdown-mermaid",
+                "streetsidesoftware.code-spell-checker"
             ]
         }
     }
