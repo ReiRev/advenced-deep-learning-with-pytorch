@@ -29,7 +29,8 @@
                 "ms-azuretools.vscode-docker",
                 "tamasfe.even-better-toml",
                 "bierner.markdown-mermaid",
-                "streetsidesoftware.code-spell-checker"
+                "streetsidesoftware.code-spell-checker",
+                "ms-toolsai.tensorboard"
             ]
         }
     }
